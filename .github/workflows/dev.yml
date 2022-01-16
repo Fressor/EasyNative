@@ -26,6 +26,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install nuxt
+    - run: npm install vercel
     - run: npm install -D @netlify/plugin-nextjs
     - run: yarn run build
