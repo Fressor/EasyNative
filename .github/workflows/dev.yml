@@ -26,6 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm run build --if-present
+    - run: nuxt generate
+    - run: nuxt run build
     - run: npm install -D @netlify/plugin-nextjs
     - run: yarn run build
