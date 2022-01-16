@@ -27,5 +27,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install vercel
-    - run: npm install -D @netlify/plugin-nextjs
+    - run: npm install netlify-cli
     - run: yarn run build
